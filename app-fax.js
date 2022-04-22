@@ -58,9 +58,7 @@ client.once("ready", async () => {
 
   messageLog(client);
   interact(client);
-  console.log(
-    `[app-fax.js] Connected to ${client.guilds.cache.size} guild(s).`
-  ); // Lists the number of guilds that the client is connected to
+  console.log(`[app-fax.js] Connected to ${client.guilds.cache.size} guild(s).`); // Lists the number of guilds that the client is connected to
   const keys = client.guilds.cache.keys(); // Gets the keys for the map object from the guilds object
   for (const entry of keys) {
     // For each guild
